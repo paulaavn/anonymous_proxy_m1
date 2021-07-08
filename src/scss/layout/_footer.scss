@@ -1,0 +1,177 @@
+.footer {
+  height: 464px;
+  background-color: $background-color-dark;
+  color: $font-color;
+  @media all and (min-width: 768px) {
+    height: 240px;
+  }
+}
+.ico-arrow {
+  background-color: $font-color;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4;
+  position: absolute;
+  transform: translateY(-25px);
+  animation: 4s Slidein infinite alternate;
+  @media all and (min-width: 768px) {
+    position: absolute;
+    margin-left: -220px;
+    transform: translate(0, -100px);
+    animation: 8s Slidein infinite alternate;
+  }
+}
+.ico-arrow:hover {
+  animation-play-state: paused;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $font-main;
+  list-style: none;
+  text-align: center;
+  line-height: 1.88;
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 250px;
+  }
+}
+@media all and (min-width: 768px) {
+  .nav-links {
+    margin-left: -80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.nav-list-1 {
+  margin-top: 60px;
+  list-style: none;
+  text-transform: uppercase;
+  @media all and (min-width: 768px) {
+    margin-top: 50px;
+    text-align: justify;
+  }
+}
+.nav-list-2 {
+  margin-top: 30px;
+  list-style: none;
+  text-transform: uppercase;
+  @media all and (min-width: 768px) {
+    margin-top: -20px;
+    margin-left: 150px;
+    text-align: justify;
+  }
+}
+.copy {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 2.14;
+  @media all and (min-width: 768px) {
+    position: absolute;
+    transform: translate(-420px, -50px);
+  }
+}
+.we {
+  font-size: 14px;
+  @media all and (min-width: 768px) {
+    position: absolute;
+    transform: translate(-384px, -9.6px);
+  }
+}
+.love {
+  height: 12px;
+}
+
+.link-articles:link,
+.link-articles:visited,
+.link-articles:active {
+  text-decoration: none;
+  color: $font-color;
+}
+.link-articles:hover {
+  color: $links-color;
+}
+
+.link-books:link,
+.link-books:visited,
+.link-books:active {
+  text-decoration: none;
+  color: $font-color;
+}
+.link-books:hover {
+  color: $links-color;
+}
+.link-events:link,
+.link-events:visited,
+.link-events:active {
+  text-decoration: none;
+  color: $font-color;
+}
+.link-events:hover {
+  color: $links-color;
+}
+
+.link-reasons:link,
+.link-reasons:visited,
+.link-reasons:active {
+  text-decoration: none;
+  color: $font-color;
+}
+.link-reasons:hover {
+  color: $links-color;
+}
+
+.link-tips:link,
+.link-tips:visited,
+.link-tips:active {
+  text-decoration: none;
+  color: $font-color;
+}
+.link-tips:hover {
+  color: $links-color;
+}
+.link-twiter:link,
+.link-twiter:visited,
+.link-twiter:active {
+  text-decoration: none;
+  color: $font-color;
+}
+.link-twiter:hover {
+  color: $links-color;
+}
+.link-instagram:link,
+.link-instagram:visited,
+.link-instagram:active {
+  text-decoration: none;
+  color: $font-color;
+}
+.link-instagram:hover {
+  color: $links-color;
+}
+.link-mastodon-social:link,
+.link-mastodon-social:visited,
+.link-mastodon-social:active {
+  text-decoration: none;
+  color: $font-color;
+}
+.link-mastodon-social:hover {
+  color: $links-color;
+}
+@keyframes Slidein {
+  from {
+    margin-left: 40%;
+  }
+  50% {
+    margin-left: 0%;
+  }
+  to {
+    margin-right: 80%;
+  }
+}

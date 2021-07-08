@@ -1,0 +1,97 @@
+.section-2 {
+  background-color: $background-color-medium;
+  font-family: $font-main;
+}
+.reasons {
+  height: 624px;
+  text-align: center;
+  font-size: 20px;
+  @media all and(min-width:768px) {
+    margin: 0px 39px 0 39px;
+    height: 397px;
+  }
+  @media all and(min-width:1200px) {
+    margin: 0px 85px 0 85px;
+    height: 427px;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  @media all and(min-width:768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 197px 100px;
+  }
+}
+.reasons-title {
+  margin-top: 30px;
+  font-size: 28px;
+  text-transform: capitalize;
+  font-family: $secondary-font;
+  @media all and(min-width:768px) {
+    grid-column: span 3;
+    font-size: 30px;
+  }
+  @media all and(min-width:1200px) {
+    font-size: 36px;
+    margin-top: 60px;
+  }
+}
+.reasons-article {
+  margin: 0 auto;
+  margin-bottom: 65px;
+  width: 184px;
+  @media all and(min-width:768px) {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  @media all and(min-width:768px) {
+    margin-top: 55px;
+  }
+}
+.rt {
+  font-weight: 800;
+  font-family: $secondary-font;
+  font-weight: bold;
+  @media all and(min-width:768px) {
+    font-size: 26px;
+  }
+}
+
+.more-reasons-botton {
+  width: 184px;
+  height: 45px;
+  margin: 0 auto;
+  background-color: $links-color;
+  border-radius: 22.5px;
+  line-height: 2.8;
+  transition: transform 3s color 2s;
+  @media all and(min-width:768px) {
+    grid-column: span 3;
+    width: 210px;
+  }
+  @media all and(min-width:768px) {
+    width: 254px;
+  }
+}
+.more-reasons-botton:hover {
+  cursor: pointer;
+  background-color: $background-color-medium;
+  transform: scale(1.5);
+  border: solid 3px $links-color;
+  line-height: 2.5;
+}
+.more-reasons-link {
+  text-decoration: none;
+  color: $font-color;
+  font-family: $font-main;
+  transition: transform 5s color 2s;
+}
+.more-reasons-link:hover {
+  color: $links-color;
+}
